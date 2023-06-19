@@ -12,18 +12,45 @@
 
 <body>
     <div class="container-fluid p-4 ">
-        <div class="row bg-light">
-            <div class="col-1 align-self-start p-2">
+        <div class="row bg-light p-2">
+            <div class="col-2 align-self-start p-1">
                 <p><i class="fa-brands fa-instagram"></i> Instagram</p>
             </div>
-            <div class="col-7"></div>
+            <div class="col-6"></div>
             <div class="col-4 col align-self-center">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-success me-md-2" type="button" href="#">Create a new post
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end m-2">
+                    <button class="btn btn-success me-md-2 btn-sm" type="button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Create a new post</button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row p-2 col-12">
+                                        <label for="message-text" class="col-form-label">Caption:</label>
+                                        <textarea class="form-control" id="message-text"
+                                                placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+                                    <div class="row mb-1 col-12">
+                                        <i class="bi bi-camera-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    </button>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-secondary"><i class="fa-solid fa-gear"></i></button>
+                        <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-gear"></i></button>
                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="visually-hidden">Toggle Dropdown</span>
@@ -43,24 +70,48 @@
         </div>
         <div class="row">
             <div class="col d-flex justify-content-center mt-3">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-regular fa-square"></i></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-brands fa-squarespace"></i></button>
-                </li>
-                
-              </ul>
-             
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><i class="fa-regular fa-square"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false"><i class="fa-brands fa-squarespace"></i></button>
+                    </li>
+
+                </ul>
+
             </div>
-          </div>
-          <div class="row">
+        </div>
+        <div class="row">
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Test</div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">TEst2</div>
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row col-12 d-flex flex-row border pt-1">
+                        <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524" class="col-4" alt="...">
+                        <img src="https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1183581756.jpg?fit=700,1024" class="col-4" alt="...">
+                        <img src="https://www.aventuraspelonossomundo.com.br/wp-content/uploads/2021/10/Ilhas-Maldivas-Dhigurah.jpg" class="col-4" alt="...">
+                        <img src="https://www.eurodicas.com.br/wp-content/uploads/2018/11/tudo-sobre-a-franca.jpg" class="col-4" alt="...">
+                        <img src="https://www.segurospromo.com.br/blog/wp-content/uploads/2020/09/tudo-sobre-a-franca.jpg" class="col-4" alt="...">
+                        <img src="https://www.vounajanela.com/wp-content/uploads/2022/02/par-6.jpg" class="col-4" alt="...">
+                    </div>
+                    <div class="row col-12 d-flex flex-row">
+                        <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524" class="col-4" alt="...">
+                        <img src="https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1183581756.jpg?fit=700,1024" class="col-4" alt="...">
+                        <img src="https://www.aventuraspelonossomundo.com.br/wp-content/uploads/2021/10/Ilhas-Maldivas-Dhigurah.jpg" class="col-4" alt="...">
+                    </div>
+                    <div class="row col-12 d-flex flex-row">
+                        <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524" class="col-4" alt="...">
+                        <img src="https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1183581756.jpg?fit=700,1024" class="col-4" alt="...">
+                        <img src="https://www.aventuraspelonossomundo.com.br/wp-content/uploads/2021/10/Ilhas-Maldivas-Dhigurah.jpg" class="col-4" alt="...">
+                    </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">TEst2
+                </div>
             </div>
-          </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
